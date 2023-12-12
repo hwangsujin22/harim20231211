@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+/* tablet 해상도 영역에서 적용되는 서식 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+  /* 헤더영역시작 */
+  .cart_btn{display:none;}
+
+  header{
+    width:100%;height:170px;
+    position:relative;
+  }
+  .h_top h1{
+    position:absolute;
+    left:10px; top:30px;
+    z-index:9010;
+  }
+  .h_top h1 img{
+    width:190px;
+  }
+  .total_btn{
+    left:auto;
+    right:10px; top:104px;
+    font-size:2rem;
+  }
+
+  /* lnb 서식 */
+  .h_top > .lnb{
+    position:absolute;
+    left:auto;
+    top:20px; right:0px;
+    width:300px;
+  }
+  .h_top > .lnb > ul{
+    width:300px;
+    flex-wrap:nowrap;
+  }
+  .h_top > .lnb > ul > li{
+    background:none;
+  }
+
+  /* 검색폼 서식 */
+  fieldset{
+    position:absolute;
+    width:500px;
+    left:auto;
+    right:0px;
+    top:60px;
+    text-align:right;
+  }
+
+  /* gnb 서식 */
+  .gnb{
+    position:absolute;
+    left:auto;
+    right:0px; top:10px;
+    background:none;
+  }
+  .gnb > ul{
+    display:flex;
+    justify-content:center;
+    padding-right:6%;
+  }
+  .gnb > ul > li{
+    border:none;
+    padding:0px 3.4%;
+    position:relative;
+    text-indent:0;
+  }
+  .gnb .c_btn{display:none;}
+  .gnb > ul > li > a > i.fa-angle-down{
+    display:none;
+  }
+  .gnb > ul > li > a{font-size:1rem;}
+  .gnb > ul > li > a::after{
+    width:1px; height:14px;
+    background:#fff;
+    content:"";
+    display:block;
+    position:relative;
+    top:-28px; left:-22px;
+  }
+  .gnb > ul > li:first-child > a::after{display:none;}
+
+
+  /* 서브메뉴 서식 */
+  .sub{
+    display:none;
+    position:absolute;
+    left:0px; top:60px;
+    width:100%; height:240px;
+    padding:15px 0px;
+    background:rgba(255,255,255,.9);
+    text-align:center;
+    line-height:180%;
+  }
+  .gnb li:first-child .sub{
+    padding-left:300px;
+    left:-300px;}
+  .gnb li:nth-last-child(2) .sub{
+    padding-right:400px;
+    right:-400px;
+  }
+
+  /* 전체메뉴 아이콘 터치 잘되게 위로 올리기 */
+  .total_btn{z-index:9001;}
+
+  /* 전체메뉴 클릭시 서브메뉴 나오게 하기 */
+  #toggle:checked + header .gnb .sub{display:block;}
+
+  /* lnb, 검색박스 움직이지 않게 하기 */
+  #toggle:checked + header > .h_top > .lnb{left:auto;}
+  #toggle:checked + header > .h_top > fieldset{left:auto;}
+
+  /* 메인 서식 */
+  .visual_slide{height:auto;}
+  .visual_slide img{
+    width:140%; height:70vh;
+    object-fit:cover;
+    transform:translateX(0px);
+  }
+
+  /* 사료 무료 체험 서식 */
+  .free_ex article{
+    flex-direction:row;
+    justify-content:space-around;
+  }
+  .free_ex > article > img{
+    width:40%;
+    margin:0;
+    padding-top:0;
+  }
+  .free_ex_right{padding-top:5%;}
+  .free_ex_right img{padding-bottom:10px;}
+  .free_ex_right > p{
+    padding-bottom:40px;
+  }
+
+  /* 쇼핑하러 가기 서식 */
+  .product{
+    width:100%;
+    justify-content: space-around;
+  }
+  .product > li{width:50%;}
+  .product img{
+    padding-left:8%;
+  }
+  .info{padding-right:12%;}
+
+  /* 펫스토리 서식 */
+  .story > article{
+    display:flex;
+    justify-content:space-around;
+  }
+  .story > article > img{
+    width:40%;
+    padding-top:0;
+  }
+  .story_left{
+    width:30%;
+    padding-top:10%;
+  }
+  .story_left > p{
+    padding-bottom:80px;
+  }
+
+  /* 인스타그램 서식 */
+  .gallery{
+    grid-template-columns:repeat(3, auto);
+    grid-template-rows:repeat(3, 170px);
+  }
+  .gallery > li:nth-child(9) ~ li{display:block;}
+
+  /* 푸터 서식 */
+  .f_top{
+    flex-wrap:nowrap;
+    flex-direction:row-reverse;
+    height:50px;
+  }
+  .f_nav{
+    background:#989898;
+    width:35%;
+    line-height:50px;
+  }
+  .f_top > dl{
+    width:65%;
+    line-height:50px;
+  }
+  .f_bottom > ul{
+    flex-wrap:nowrap;
+  }
+  .f_bottom > ul > li:first-child{order:1;width:150%;}
+  .f_bottom > ul > li:nth-child(2){order:2;width:150%;}
+  .f_bottom > ul > li:last-child{order:3;}
+  .f_bottom > ul > li:nth-child(3){order:4;}
+  .f_bottom select, .f_bottom > ul > li:nth-child(3) a{
+    position:absolute;
+  }
+  .f_bottom select{
+    width:200px;
+    right:40px; top:60px;
+  }
+  .f_bottom > ul > li:nth-child(3) a{
+    right:40px; top:90px;
+  }
+  .f_bottom > ul > li:nth-child(3) a:first-child{transform:translateX(-100px);}
+  .f_bottom > ul > li:nth-child(3) a:nth-child(2){transform:translateX(-50px);}
+
+  
+  @media screen and (min-width:881px) and (max-width:1024px) {
+    .gallery{
+      grid-template-columns:repeat(4, auto);
+      grid-template-rows:repeat(3, 200px);
+    }
+    .gallery li:nth-child(6) ~ li{display:block;}
+    .f_bottom br{display:none;}
+
+    .f_bottom > ul > li .f_info{width:110%;}
+    .f_bottom > ul > li:first-child {padding-left:0px;}
+    .f_bottom > ul > li:nth-child(2){padding-left:30px;}
+    .f_bottom > ul > li:last-child{width:50%;}
+    
+  }
+
+}

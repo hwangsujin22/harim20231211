@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* 헤더, 푸터 공통서식 */
+
+header{
+  background:#484848;
+  position:relative;
+}
+
+/* 체크박스 숨기기 */
+#toggle{display:none;}
+
+footer{
+  background:#1c1c1c;
+  position:relative;
+}
+
+footer address{
+  border-top:1px solid #ccc;
+  padding: 15px 2%;
+  line-height:17px;
+  font-size:0.7rem;
+}
+
+  /* 버튼 공통서식 */
+.button{
+  font-size:1rem;
+  background:#fff;
+  padding:6px 30px;
+  border:1px solid #ccc;
+  transition:0.5s;
+}
+.button:hover{
+  background:#484848;
+  color:#fff;
+}
+
+/* 가운데 정렬 서식 */
+.align_c{text-align:center;}
+
+/* 로그인 폼 서식 */
+
+.login_wrap{
+  width:320px;
+  margin:50px auto 0px auto;
+  text-align:center;
+  position:static;
+}
+.login_wrap > legend{
+  font-size:20px;
+  font-weight:500;
+  line-height:60px;
+}
+label[for=id_txt], label[for=pw_txt]{display:none;}
+.login_wrap p{
+  margin-bottom:10px;
+}
+.login_wrap input{
+  width:312px;
+  height:50px;
+}
+.login_wrap input[type=checkbox]{
+  width:16px; height:16px;
+}
+.login_wrap input[type=button]{
+  width:320px;
+  font-weight:bold;
+  border:none;
+  color:#fff;
+  margin-bottom:10px;
+}
+#login_btn{background:#f00;}
+.btn01{background:rgb(12, 175, 12);}
+.btn02{
+  background:rgb(248, 248, 96);
+  color:#333 !important;
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .login_wrap{
+    padding-bottom:300px;
+  }
+}

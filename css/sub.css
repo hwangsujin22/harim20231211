@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* pc해상도일 때 적용되는 서식 */
+@media screen and (min-width:1025px) {
+
+  /* toggle버튼, 장바구니, 닫기버튼 숨기기 */
+  .total_btn, .cart_btn, .c_btn{display:none;}
+
+  /* 콘텐츠 중앙에 배치하기 */
+  .h_top, .gnb > ul, .f_bottom{
+    width:1200px;
+    margin:0 auto;
+  }
+
+  /* 헤더 서식 */  
+  header{
+    width:100%;height:170px;
+    position:absolute;
+    z-index:9006;
+  }
+  .h_top{
+    position:relative;
+  }
+  .h_top h1{
+    position:absolute;
+    left:10px; top:30px;
+  }
+  .h_top h1 img{
+    width:240px;
+  }
+
+  /* lnb 서식 */
+  .h_top > .lnb{
+    position:absolute;
+    left:auto;
+    top:20px; right:0px;
+    width:300px;
+  }
+  .h_top > .lnb > ul{
+    width:300px;
+    flex-wrap:nowrap;
+  }
+  .h_top > .lnb > ul > li{
+    background:none;
+  }
+
+  /* 검색폼 서식 */
+  fieldset{
+    position:absolute;
+    width:500px;
+    left:auto;
+    right:0px;
+    top:60px;
+    text-align:right;
+  }
+
+  /* gnb 서식 */
+  .h_bottom{
+    width:100%; height:59px;
+    background:rgba(255,255,255,.8);
+    position:absolute;
+    top:110px; left:0px;
+    overflow:hidden;
+    transition:0.5s;
+  }
+  .h_bottom:hover{height:330px;}
+  .gnb{
+    width:100%; height:59px;
+    position:static;
+    left:auto;
+    right:0px;top:0px;
+    background:#484848;
+  }
+  .gnb > ul{
+    padding:0px;
+    display:flex;
+    justify-content:end;
+  }
+  .gnb > ul > li{
+    border:none;
+    padding:0px 3.4%;
+    position:relative;
+    text-indent:0;
+  }
+
+  .gnb > ul > li > a > i.fa-angle-down{
+    display:none;
+  }
+  .gnb > ul > li > a{font-size:1rem;}
+  .gnb > ul > li > a:hover{text-decoration:underline;}
+  .gnb > ul > li > a::after{
+    width:1px; height:14px;
+    background:#fff;
+    content:"";
+    display:block;
+    position:relative;
+    top:-28px; left:-40px;
+  }
+  .gnb > ul > li:first-child > a::after{display:none;}
+  .gnb > ul > li:last-child{padding-right:0;}
+
+  /* 서브메뉴 서식 */
+  .sub{
+    display:block;
+    position:absolute;
+    width:100%; height:240px;
+    padding:15px 0px;
+    text-align:center;
+    line-height:180%;
+    transition:0.5s;
+    left:0px; top:58px;
+  }
+  .sub a{
+    font-size:0.95rem;
+    line-height:220%;
+  }
+  .sub a:hover{text-decoration:underline;}
+  
+  /* 메인서식 */
+  main{padding-top:130px;}
+  
+  .s_story > h2{
+    display:block;
+    background:#32a18f;
+    text-align:center;
+  }
+
+  @media screen and (min-width:1025px) {
+    .login_wrap{
+      padding-bottom:39px;
+    }
+  }
+
+  /* 탭 콘텐츠라고 하는 메뉴 */
+  section.s_story{padding-bottom:0px;}
+  .s_lnb > ul{
+    width:1200px;
+    margin:0 auto;
+    display:flex;
+    border-bottom:2px solid #ccc;
+    justify-content:space-around;
+  }
+  .s_lnb > ul > li > a{
+    line-height:80px;
+    font-size:20px;
+  }
+  .s_lnb > ul > li > a:focus{
+    color:#9d6849;
+  }
+  .s_lnb > ul > li > a:focus::after{
+    display:block;
+    content:"";
+    width:100%;
+    height:2px;
+    background:#9d6849;
+    transform:translateY(2px);
+  }
+  .our_story{
+    width:1200px;
+    margin:50px auto;
+  }
+  .our_credo{
+    width:100%;
+    padding:70px 0px;
+    background:#da291c;
+    text-align:center;
+
+  }
+
+
+  /* 푸터 서식 */
+  .f_top{
+    flex-wrap:nowrap;
+    flex-direction:row-reverse;
+    height:50px;
+    justify-content:center;
+  }
+  .f_nav{
+    background:#989898;
+    width:300px;
+    line-height:50px;
+  }
+  .f_top > dl{
+    width:900px;
+    line-height:50px;
+  }
+  .f_bottom > ul{
+    position:relative;
+    flex-wrap:nowrap;
+  }
+  .f_bottom > ul > li:first-child{order:1;width:150%;}
+  .f_bottom > ul > li:nth-child(2){order:2;width:150%;}
+  .f_bottom > ul > li:last-child{order:3;}
+  .f_bottom > ul > li:nth-child(3){order:4;}
+  .f_bottom select, .f_bottom > ul > li:nth-child(3) a{
+    position:absolute;
+  }
+  .f_bottom select{
+    width:200px;
+    right:40px; top:20px;
+  }
+  .f_bottom > ul > li:nth-child(3) a{
+    right:40px; top:50px;
+  }
+  .f_bottom > ul > li:nth-child(3) a:first-child{transform:translateX(-100px);}
+  .f_bottom > ul > li:nth-child(3) a:nth-child(2){transform:translateX(-50px);}
+
+}
