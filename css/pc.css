@@ -121,14 +121,19 @@
     padding-top:170px;
   }
   .visual_slide{
-    height:80%;
+    height:auto;
   }
   .visual_slide img{
     width:100%; height:100%;
-    transform:none;
   }
+  .swiper-slide:first-child img{transform:none;}
+  .swiper-slide:nth-child(2) img{transform:none;}
+  .swiper-slide:nth-child(3) img{transform:none;}
+  .swiper-slide:nth-last-child(2) img{transform:none;}
+  .swiper-slide:last-child img{transform:none;}
 
   /* 사료 무료 체험 서식 */
+  .free_ex{transform:translateY(-1px);}
   .free_ex article{
     flex-direction:row;
     justify-content:space-around;
@@ -149,17 +154,13 @@
     margin:50px auto;
     justify-content:space-around;
     padding-top:0px;
+    padding-bottom:50px;
+    overflow:hidden;
   }
-  .product > li{width:40%;}
-  .product img{width:170px;}
-  .product img{
-    padding:0px 2%;
-  }
+  .product > li > a{display:block;width:110px;float:none;}
+  .product > li{width:140px;}
 
-  .info{
-    width:268px;
-    padding-top:50px;
-  }
+  .info{padding-top:50px;float:none;}
 
   /* 펫 스토리 서식 */
   .story > article{
@@ -180,8 +181,9 @@
 
   /* 인스타그램 서식 */
   .gallery{
-    grid-template-columns:repeat(4, auto);
-    grid-template-rows:repeat(3, 190px);
+    place-content:center;
+    grid-template-columns:repeat(4, 23%);
+    grid-template-rows:repeat(3, auto);
   }
   .gallery li:nth-child(6) ~ li{display:block;}
   .f_bottom br{display:none;}

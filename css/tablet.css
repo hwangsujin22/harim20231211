@@ -113,13 +113,29 @@
 
   /* 메인 서식 */
   .visual_slide{height:auto;}
-  .visual_slide img{
-    width:140%; height:70vh;
-    object-fit:cover;
-    transform:translateX(0px);
+  .visual_slide img{width:198%;object-fit:cover;}
+  .swiper-slide:nth-child(2) img{transform:translateX(-620px);}
+  @media screen and (min-width:840px) {
+    .swiper-slide:first-child img{transform:translateX(-808px);}
+    .swiper-slide:nth-child(2) img{transform:translateX(-644px);}
+    .swiper-slide:nth-last-child(2) img{transform:translateX(-420px);}
+    .swiper-slide:last-child img{transform:translateX(-420px);}
+  }
+  @media screen and (min-width:890px) {
+    .swiper-slide:first-child img{transform:translateX(-858px);}
+    .swiper-slide:nth-child(2) img{transform:translateX(-682px);}
+    .swiper-slide:nth-last-child(2) img{transform:translateX(-460px);}
+    .swiper-slide:last-child img{transform:translateX(-450px);}
+  }
+  @media screen and (min-width:960px) {
+    .swiper-slide:first-child img{transform:translateX(-925px);}
+    .swiper-slide:nth-child(2) img{transform:translateX(-750px);}
+    .swiper-slide:nth-last-child(2) img{transform:translateX(-460px);}
+    .swiper-slide:last-child img{transform:translateX(-450px);}
   }
 
   /* 사료 무료 체험 서식 */
+  .free_ex{transform:translateY(-1px);}
   .free_ex article{
     flex-direction:row;
     justify-content:space-around;
@@ -136,15 +152,14 @@
   }
 
   /* 쇼핑하러 가기 서식 */
-  .product{
-    width:100%;
-    justify-content: space-around;
-  }
-  .product > li{width:50%;}
+  .product{width:150%;justify-content: space-around;}
+  .product > li > a{display:block;width:110px;float:none;}
+  .product > li{width:140px;}
   .product img{
     padding-left:8%;
   }
-  .info{padding-right:12%;}
+  .info{float:none;}
+
 
   /* 펫스토리 서식 */
   .story > article{
@@ -165,8 +180,9 @@
 
   /* 인스타그램 서식 */
   .gallery{
-    grid-template-columns:repeat(3, auto);
-    grid-template-rows:repeat(3, 170px);
+    place-content:center;
+    grid-template-columns:repeat(3, 30%);
+    grid-template-rows:repeat(3, auto);
   }
   .gallery > li:nth-child(9) ~ li{display:block;}
 
