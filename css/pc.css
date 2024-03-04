@@ -162,7 +162,7 @@
   .product > li:last-child > a,
   .product > li:nth-last-child(2) > a
   {width:120px;}
-  .product > li > a img{padding:0px 40px;}
+  .product > li > a img{padding:0px 26px;}
   .info{padding-top:50px;float:none;}
 
   /* 펫 스토리 서식 */
