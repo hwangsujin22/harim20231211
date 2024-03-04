@@ -254,6 +254,8 @@
   background: #000;
   opacity: 0.2;
 }
+.mySwiper2 .swiper-pagination{bottom:20px;}
+.mySwiper2 .swiper-pagination-bullet-active{background:#E32929 !important;}
 
 /* 상품목록 콘트롤 버튼 서식 */
 .dot {

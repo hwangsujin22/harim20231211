@@ -149,17 +149,20 @@
   }
 
   /* 쇼핑하러 가기 */
+  .swiper{width:1200px;overflow:hidden;margin:0 auto;}
   .product{
     width:1200px;
     margin:50px auto;
-    justify-content:space-around;
     padding-top:0px;
     padding-bottom:50px;
-    overflow:hidden;
+    box-sizing:border-box;
   }
   .product > li > a{display:block;width:110px;float:none;}
-  .product > li{width:140px;}
-
+  .product > li{width:140px;height:400px;}
+  .product > li:last-child > a,
+  .product > li:nth-last-child(2) > a
+  {width:120px;}
+  .product > li > a img{padding:0px 40px;}
   .info{padding-top:50px;float:none;}
 
   /* 펫 스토리 서식 */

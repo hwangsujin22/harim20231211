@@ -152,14 +152,9 @@
   }
 
   /* 쇼핑하러 가기 서식 */
-  .product{width:150%;justify-content: space-around;}
-  .product > li > a{display:block;width:110px;float:none;}
-  .product > li{width:140px;}
-  .product img{
-    padding-left:8%;
-  }
-  .info{float:none;}
-
+  .info{padding-left:16px;}
+  .mySwiper2 .swiper-slide img{transform:none;}
+  .product > li > a img{padding:0px 35px;}
 
   /* 펫스토리 서식 */
   .story > article{

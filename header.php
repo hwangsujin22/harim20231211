@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Date" content="2023-12-07T11:42:30+09:00">
-  <meta name="Subject" content="모든 디바이스에 최적화된 반응형웹">
-  <meta name="Title" content="하림펫푸드 반응형웹">
-  <meta name="Other" content="작성자이름 적기">
-  <meta name="Distribution" content="배포자이름 적기">
-  <meta name="Copyright" content="하림">
-  <meta name="Build" content="2023-12-04T11">
-  <title>하림펫푸드 반응형웹 - 메인페이지</title>
-  <!-- 1. 초기화 -->
-  <link href="./css/reset.css" rel="stylesheet" type="text/css">
-  <!-- 2. 기본서식 base 글자모양, 글자크기, 색상, 링크 -->
-  <link href="./css/base.css" rel="stylesheet" type="text/css">
-  <!-- 3. 공통서식 header, footer 공통서식 -->
-  <link href="./css/common.css" rel="stylesheet" type="text/css">
-  <!-- 4. mobile해상도에 맞는 서식 -->
-  <link href="./css/mobile.css" rel="stylesheet" type="text/css">
-  <!-- 5. tablet해상도에 맞는 서식 -->
-  <link href="./css/tablet.css" rel="stylesheet" type="text/css">
-  <!-- 6. sub 서식(pc) -->
-  <link href="./css/sub.css" rel="stylesheet" type="text/css">
-  <!-- 폰트어썸 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <!-- 파비콘 이미지 삽입하기 -->
-  <link rel="shortcut icon" type="image/x-icon" href="./images/w3xeawBW.ico">
-</head>
-<body>
+
   <form name="search" method="post" action="search.php">
     <input type="checkbox" id="toggle">
     
